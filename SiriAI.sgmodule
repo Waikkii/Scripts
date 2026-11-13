@@ -1,8 +1,8 @@
 #!name=Siri AI
 #!desc=Apple Intelligence / Siri AI 专用代理分流，支持自定义节点或策略组，无节点检测。
 #!author=Custom
-#!arguments=代理分流:PROXY
-#!arguments-desc=填写代理节点或策略组名称，默认 PROXY。
+#!arguments=代理分流:🧊 纯净住宅
+#!arguments-desc=填写代理节点或策略组名称，默认 🧊 纯净住宅。
 #!category=应用分流🔀
 
 [Rule]
