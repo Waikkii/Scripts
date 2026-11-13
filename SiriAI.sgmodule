@@ -1,0 +1,37 @@
+#!name=Siri AI
+#!desc=Apple Intelligence / Siri AI 专用代理分流，支持自定义节点或策略组，无节点检测。
+#!author=Custom
+#!arguments=代理分流:PROXY
+#!arguments-desc=填写代理节点或策略组名称，默认 PROXY。
+
+[Rule]
+# Apple Intelligence / Siri
+DOMAIN,guzzoni.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,smoot.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,api-siri-prod.apple.com,{{{代理分流}}}
+DOMAIN-KEYWORD,siri,{{{代理分流}}}
+
+# Apple Intelligence Gateway
+DOMAIN-SUFFIX,gateway.icloud.com,{{{代理分流}}}
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ls.apple.com,{{{代理分流}}}
+
+# Apple Private Relay / Mask
+DOMAIN,mask-api.fe.apple-dns.net,{{{代理分流}}}
+DOMAIN,mask-api.icloud.com,{{{代理分流}}}
+DOMAIN,mask-t.apple-dns.net,{{{代理分流}}}
+DOMAIN,mask.apple-dns.net,{{{代理分流}}}
+DOMAIN-SUFFIX,mask-h2.icloud.com,{{{代理分流}}}
+DOMAIN-SUFFIX,mask.icloud.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,{{{代理分流}}}
+
+# Apple Relay CDN
+DOMAIN-SUFFIX,apple-relay.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.tasty-edge.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.akamaized.net,{{{代理分流}}}
+DOMAIN-SUFFIX,cp4.cloudflare.com,{{{代理分流}}}
+
+# Additional
+DOMAIN-SUFFIX,apps.mastic.com,{{{代理分流}}}
