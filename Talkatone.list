@@ -1,0 +1,10 @@
+# Talkatone - proxy routing
+# Original author: LOWERTOP
+# OpenClash / Mihomo: behavior=classical, format=text
+# Active rules: 5
+
+DOMAIN-SUFFIX,tktn.at
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,vm.talkatone.com
+DOMAIN-SUFFIX,tenor.com
+DOMAIN-WILDCARD,xmpp*.tktn.be
