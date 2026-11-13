@@ -1,0 +1,57 @@
+
+#!name=eBay 全球代理分流
+#!desc=eBay 全球站点及相关服务代理分流，支持自定义节点或策略组，无节点检测。
+#!author=Custom
+#!arguments=代理分流:PROXY
+#!arguments-desc=填写代理节点或策略组名称，默认 PROXY。
+
+[Rule]
+# eBay Global
+DOMAIN-SUFFIX,ebay.at,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.be,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.ca,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.ch,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.cn,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.co.uk,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.au,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.hk,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.sg,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.de,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.es,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.fr,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.ie,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.in,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.it,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.lt,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.nl,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.ph,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.pk,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.pl,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.co.nz,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.co.ve,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.co.za,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.ar,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.ec,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.mt,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.com.ph,{{{代理分流}}}
+
+# eBay CDN / Services
+DOMAIN-SUFFIX,ebaycdn.net,{{{代理分流}}}
+DOMAIN-SUFFIX,ebayrtm.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebayimg.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebayinc.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebaymainstreet.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebayprivacycenter.com,{{{代理分流}}}
+DOMAIN-SUFFIX,ebaystatic.com,{{{代理分流}}}
+DOMAIN-SUFFIX,e-bay.it,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay-us.com,{{{代理分流}}}
+
+# eBay Korea
+DOMAIN-SUFFIX,about.co.kr,{{{代理分流}}}
+DOMAIN-SUFFIX,auction.co.kr,{{{代理分流}}}
+DOMAIN-SUFFIX,ebay.co.krhe,{{{代理分流}}}
+DOMAIN-SUFFIX,ebaykorea.com,{{{代理分流}}}
+DOMAIN-SUFFIX,esmplus.com,{{{代理分流}}}
+DOMAIN-SUFFIX,g9.co.kr,{{{代理分流}}}
+DOMAIN-SUFFIX,gmarket.co.kr,{{{代理分流}}}
