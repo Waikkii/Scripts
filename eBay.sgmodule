@@ -4,6 +4,7 @@
 #!author=Custom
 #!arguments=代理分流:PROXY
 #!arguments-desc=填写代理节点或策略组名称，默认 PROXY。
+#!category=应用分流🔀
 
 [Rule]
 # eBay Global
