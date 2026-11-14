@@ -1,0 +1,6 @@
+# 国行 Siri 语音主网关与普通话来电询问
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,siri.apple.com
+DOMAIN,dejavu.apple.com
+DOMAIN,sequoia.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
