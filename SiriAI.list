@@ -2,33 +2,23 @@
 # OpenClash / Mihomo: behavior=classical, format=text
 # Source: https://raw.githubusercontent.com/Waikkii/Scripts/refs/heads/main/SiriAI.sgmodule
 
-# Apple Intelligence / Siri
-DOMAIN,guzzoni.apple.com
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN-SUFFIX,api-siri-prod.apple.com
-DOMAIN-KEYWORD,siri
-
-# Apple Intelligence Gateway
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-DOMAIN-SUFFIX,ls.apple.com
-
-# Apple Private Relay / Mask
-DOMAIN,mask-api.fe.apple-dns.net
+# Apple Intelligence 区域定位校验、PCC 隐私计算
+DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,mask-api.icloud.com
-DOMAIN,mask-t.apple-dns.net
-DOMAIN,mask.apple-dns.net
-DOMAIN-SUFFIX,mask-h2.icloud.com
-DOMAIN-SUFFIX,mask.icloud.com
-DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-
-# Apple Relay CDN
+DOMAIN,mask.icloud.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN-SUFFIX,app.apple.com
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,apple-relay.tasty-edge.com
 DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,cp4.cloudflare.com
 
-# Additional
-DOMAIN-SUFFIX,apps.mastic.com
+# Siri ChatGPT 扩展与视觉智能
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
