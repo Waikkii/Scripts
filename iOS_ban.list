@@ -1,0 +1,12 @@
+
+# iOS 系统更新检测
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+
+# iOS 固件下载
+DOMAIN,appldnld.apple.com,REJECT
+DOMAIN,updates.cdn-apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
+
+# Apple 软件更新服务
+DOMAIN,gg.apple.com,REJECT
