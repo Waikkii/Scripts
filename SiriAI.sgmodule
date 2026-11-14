@@ -1,38 +1,37 @@
 #!name=Siri AI
 #!desc=Apple Intelligence / Siri AI 专用代理分流，支持自定义节点或策略组，无节点检测。
-#!author=Custom
-#!arguments=代理分流:🧊 纯净住宅
-#!arguments-desc=填写代理节点或策略组名称，默认 🧊 纯净住宅。
+#!author=Waikiki
 #!category=应用分流🔀
 
+[General]
+skip-proxy = %APPEND% guzzoni.apple.com
+always-real-ip = %APPEND% guzzoni.apple.com, *.guzzoni.apple.com, *.siri.apple.com
+
 [Rule]
-# Apple Intelligence / Siri
-DOMAIN,guzzoni.apple.com,{{{代理分流}}}
-DOMAIN-SUFFIX,smoot.apple.com,{{{代理分流}}}
-DOMAIN-SUFFIX,api-siri-prod.apple.com,{{{代理分流}}}
-DOMAIN-KEYWORD,siri,{{{代理分流}}}
+# 1. 国行 Siri 语音主网关与普通话来电询问必须真实 IP 直连（严禁走代理）
+DOMAIN-SUFFIX,guzzoni.apple.com,DIRECT
+DOMAIN-SUFFIX,siri.apple.com,DIRECT
+DOMAIN,dejavu.apple.com,DIRECT
+DOMAIN,sequoia.apple.com,DIRECT
+DOMAIN-SUFFIX,smoot.apple.com,DIRECT
 
-# Apple Intelligence Gateway
-DOMAIN-SUFFIX,gateway.icloud.com,{{{代理分流}}}
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,{{{代理分流}}}
-DOMAIN-SUFFIX,ls.apple.com,{{{代理分流}}}
+# 2. Apple Intelligence 区域定位校验、PCC 隐私计算中继与匿名令牌签发（请使用支持 UDP/QUIC 的低并发干净美区节点）
+DOMAIN,gspe1-ssl.ls.apple.com,🧊 纯净住宅
+DOMAIN,mask-api.icloud.com,🧊 纯净住宅
+DOMAIN,mask.icloud.com,🧊 纯净住宅
+DOMAIN,mask-h2.icloud.com,🧊 纯净住宅
+DOMAIN-SUFFIX,app.apple.com,🧊 纯净住宅
+DOMAIN-SUFFIX,apple-relay.apple.com,🧊 纯净住宅
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,🧊 纯净住宅
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,🧊 纯净住宅
+DOMAIN-SUFFIX,apple-relay.akamaized.net,🧊 纯净住宅
+DOMAIN-SUFFIX,cp4.cloudflare.com,🧊 纯净住宅
 
-# Apple Private Relay / Mask
-DOMAIN,mask-api.fe.apple-dns.net,{{{代理分流}}}
-DOMAIN,mask-api.icloud.com,{{{代理分流}}}
-DOMAIN,mask-t.apple-dns.net,{{{代理分流}}}
-DOMAIN,mask.apple-dns.net,{{{代理分流}}}
-DOMAIN-SUFFIX,mask-h2.icloud.com,{{{代理分流}}}
-DOMAIN-SUFFIX,mask.icloud.com,{{{代理分流}}}
-DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,{{{代理分流}}}
-
-# Apple Relay CDN
-DOMAIN-SUFFIX,apple-relay.apple.com,{{{代理分流}}}
-DOMAIN-SUFFIX,apple-relay.cloudflare.com,{{{代理分流}}}
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com,{{{代理分流}}}
-DOMAIN-SUFFIX,apple-relay.tasty-edge.com,{{{代理分流}}}
-DOMAIN-SUFFIX,apple-relay.akamaized.net,{{{代理分流}}}
-DOMAIN-SUFFIX,cp4.cloudflare.com,{{{代理分流}}}
-
-# Additional
-DOMAIN-SUFFIX,apps.mastic.com,{{{代理分流}}}
+# 3. Siri ChatGPT 扩展与视觉智能（提问 + Google 识图）
+DOMAIN-SUFFIX,openai.com,🧊 纯净住宅
+DOMAIN-SUFFIX,chatgpt.com,🧊 纯净住宅
+DOMAIN-SUFFIX,oaistatic.com,🧊 纯净住宅
+DOMAIN-SUFFIX,oaiusercontent.com,🧊 纯净住宅
+DOMAIN-SUFFIX,google.com,🧊 纯净住宅
+DOMAIN-SUFFIX,googleapis.com,🧊 纯净住宅
+DOMAIN-SUFFIX,gstatic.com,🧊 纯净住宅
